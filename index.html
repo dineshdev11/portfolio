@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dinesh - Software Developer - Workday Extend | Specialized in HR & Finance Tech Solutions |Custom Solutions Expert | Immediate Joiner</title>
+  <title>Dinesh - Software Developer - Workday Extend | Specialized in HR & Finance Tech Solutions |Custom Solutions
+    Expert | Immediate Joiner</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
@@ -21,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container">
       <a class="navbar-brand" href="">
-        <img src="images/logo.png" alt="logo image">
+        <img src="images/logo.png" alt="Dinesh" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,41 +53,62 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
   <section id="home" class="intro-section">
-  <div class="container">
-    <div class="row align-items-center text-white">
-      <!-- START THE CONTENT FOR THE INTRO  -->
-      <div class="col-md-6 intros text-start">
-        <h1 class="display-2">
-          <span class="display-2--intro">Hey!, I'm Dinesh</span>
-          <span class="display-2--description lh-base">
-            I'm a Workday Extend Application Developer specialized in HR and Finance Tech Solutions. With experience building scalable, user-centric apps, I'm passionate about transforming business processes through innovation and clean code.
-          </span>
-        </h1>
-        <button type="button" class="rounded-pill btn-rounded">Get in Touch
-          <span><i class="fas fa-arrow-right"></i></span>
-        </button>
-      </div>
-      <!-- START THE CONTENT FOR THE VIDEO -->
-      <div class="col-md-6 intros text-end">
-        <div class="video-box">
-          <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
-          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
-            <span>
-              <i class="fas fa-play-circle"></i>
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- START THE CONTENT FOR THE INTRO  -->
+        <div class="col-md-6 intros text-start">
+          <h1 class="display-2">
+            <span class="display-2--intro">Yo! I’m Dinesh — Crafting clean code and smart apps.</span>
+            <span class="display-2--description lh-base">
+              <b><div class="changing-text" id="text">   
+              </div> </b>
+              Skilled in React, HTML, CSS, Java, PHP APIs — Delivering seamless UI/UX and smart integrations.
             </span>
-            <span class="border-animation border-animation--border-1"></span>
-            <span class="border-animation border-animation--border-2"></span>
-          </a>
+          </h1>
+          <button type="button" class="rounded-pill btn-rounded">Get in Touch
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+        <script>
+          const texts = ["HR & Finance App Developer | Workday Extend & Zoho Expert", "Custom Application Developer for HR & Finance Platforms", "UI/UX Specialist & API Developer | HTML, CSS, React, Java, PHP"];
+          let index = 0;
+          const textElement = document.getElementById("text");
+
+          function changeText() {
+            textElement.style.opacity = 0;
+            setTimeout(() => {
+              textElement.textContent = texts[index];
+              textElement.style.opacity = 1;
+              index = (index + 1) % texts.length;
+            }, 500);
+          }
+
+          // Initial call
+          changeText();
+          // Change text every 3 seconds
+          setInterval(changeText, 3000);
+        </script>
+        <!-- START THE CONTENT FOR THE VIDEO -->
+        <div class="col-md-6 intros text-end">
+          <div class="video-box">
+            <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
+            <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+              <span>
+                <i class="fas fa-play-circle"></i>
+              </span>
+              <span class="border-animation border-animation--border-1"></span>
+              <span class="border-animation border-animation--border-2"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#ffffff" fill-opacity="1"
-      d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-    </path>
-  </svg>
-</section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
 
 
   <!-- //////////////////////////////////////////////////////////////////////////////////////////////

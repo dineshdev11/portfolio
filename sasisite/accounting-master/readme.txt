@@ -1,8 +1,6 @@
-Thank you for using our template!
+Thanks for choosing us!
 
-For more awesome templates please visit https://colorlib.com/wp/templates/
+Develper Contact :
 
-Copyright information for the template can't be altered/removed unless you purchase a license.
-More information about the license is available here: https://colorlib.com/wp/licence/
-
-Removing copyright information without the license will result in suspension of your hosting and/or domain name(s).
+Dinesh M
++91 6382585971

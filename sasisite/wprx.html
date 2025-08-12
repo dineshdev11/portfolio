@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site — Work in Progress</title>
+  <meta name="description" content="Siva Shankar S — Tax Consultant — Site under construction">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#102463; /* deep blue similar to provided image */
+      --accent:#ffe500; /* yellow accent */
+      --muted:#eef2ff;
+      --card:#0e2a5a;
+      --glass: rgba(255,255,255,0.06);
+      --max-width:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg,var(--bg) 0%, #0b2350 100%);
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+      text-align:center;
+      padding:28px;
+      border-radius:14px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .logo-img{
+      width:160px;
+      height:auto;
+      border-radius:10px;
+      padding:6px;
+      background:var(--glass);
+      display:inline-block;
+      border:3px solid rgba(255,255,255,0.06);
+      margin-bottom:12px;
+    }
+
+    h1{
+      margin:8px 0 6px;
+      font-size:34px;
+      letter-spacing:1px;
+      color:var(--accent);
+      font-weight:800;
+    }
+    p.lead{
+      margin:6px 0 18px;
+      font-size:18px;
+      color: #ffffffcc;
+    }
+
+    .cards{
+      display:flex;
+      gap:18px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .card{
+      background: rgba(255,255,255,0.03);
+      padding:14px 18px;
+      border-radius:10px;
+      min-width:200px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+    .primary-phone{font-weight:800; font-size:20px; color:var(--bg); background:var(--muted); padding:8px 12px; border-radius:6px}
+
+    .progress{
+      width:100%;
+      height:14px;
+      background: rgba(255,255,255,0.06);
+      border-radius:999px;
+      overflow:hidden;
+      margin:22px 0 6px;
+    }
+    .progress > i{
+      display:block;
+      height:100%;
+      width:56%; /* editable - pretend progress */
+      background: linear-gradient(90deg, var(--accent), #ffd44a);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35) inset;
+    }
+
+    form.subscribe{display:flex; gap:8px; justify-content:center; margin-top:12px; flex-wrap:wrap}
+    .subscribe input[type="email"]{
+      padding:12px 14px; border-radius:8px; border:0; min-width:220px; outline:none; font-size:14px;
+    }
+    .subscribe button{
+      padding:12px 16px; border-radius:8px; border:0; font-weight:700; background:var(--accent); color:#02205a; cursor:pointer;
+    }
+
+    .footer{
+      margin-top:22px;
+      font-size:14px;
+      color:#dbe8ff;
+    }
+    .muted{opacity:0.9}
+
+    /* small screens */
+    @media (max-width:600px){
+      h1{font-size:26px}
+      .logo-img{width:120px}
+      .primary-phone{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+
+    <!-- Replace the image path if you move the image. The developer provided path is used below. -->
+    <img src="/mnt/data/WhatsApp Image 2025-08-11 at 5.02.57 PM.jpeg" alt="Sasikumar & Associates logo" class="logo-img" onerror="this.style.display='none'">
+
+    <h1>SITE UNDER CONSTRUCTION</h1>
+    <p class="lead">We're building something helpful — launching soon. <strong>Siva Shankar S</strong> — Tax Consultant (GST / Income Tax / PAN)</p>
+
+    <div class="progress" aria-hidden="true" title="Site progress">
+      <i></i>
+    </div>
+    <p class="muted">Estimated completion: <strong>56%</strong></p>
+
+    <div class="cards" aria-label="contact and location">
+      <div class="card">
+        <div style="font-size:13px;color:#dbe8ff">Contact</div>
+        <div style="margin-top:8px">Cell: <span class="primary-phone">9894957026</span></div>
+        <div style="margin-top:6px">Alt: <span class="primary-phone" style="background:transparent;color:var(--muted);padding:6px;border:1px solid rgba(255,255,255,0.06)">9842061915</span></div>
+      </div>
+
+      <div class="card">
+        <div style="font-size:13px;color:#dbe8ff">Office</div>
+        <div style="margin-top:8px;line-height:1.25;max-width:260px;text-align:left">Sri Agora Sastrigal Building, Room No. 1 &amp; 2,<br>192/77, Pattamangala Street,<br>Mayiladuthurai - 609001</div>
+      </div>
+
+      <div class="card">
+        <div style="font-size:13px;color:#dbe8ff">Subscribe</div>
+        <form class="subscribe" onsubmit="event.preventDefault(); subscribe();">
+          <input id="email" name="email" type="email" placeholder="your email" aria-label="Email for updates">
+          <button type="submit">Notify me</button>
+        </form>
+        <small class="muted" id="submsg" style="display:block;margin-top:8px">We'll only send important updates.</small>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p style="margin:12px 0 0">Want changes? <a href="mailto:info@example.com" style="color:var(--accent);text-decoration:none">Email us</a> — or open this file and edit the HTML/CSS.</p>
+    </div>
+
+  </main>
+
+  <script>
+    function subscribe(){
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('submsg');
+      if(!email || !email.includes('@')){ msg.textContent='Please enter a valid email.'; msg.style.color='salmon'; return; }
+      msg.textContent = 'Thanks — we\'ll notify you when we launch.';
+      msg.style.color = 'lightgreen';
+      // NOTE: This demo does not send the email anywhere. Connect to your backend or an email service to persist.
+    }
+  </script>
+</body>
+</html>
